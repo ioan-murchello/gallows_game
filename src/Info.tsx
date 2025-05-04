@@ -12,7 +12,12 @@ const GameInfo = styled.header`
   align-items: center;
   gap: 1rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  min-height: 100px;
+
+  @media (max-width: 600px) {
+    min-height: 75px;
+  }
 `;
 
 const InfoWrapper = styled.div`

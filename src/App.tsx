@@ -9,11 +9,12 @@ import { useGameContext } from "./ctx.js";
 import Info from "./Info.js";
 
 const Main = styled.main`
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-  width: 100%;
-  margin: 0 auto;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
 
   @media (max-width: 600px) {
     gap: 0.7rem;

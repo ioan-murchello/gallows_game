@@ -40,7 +40,11 @@ const LettersWrapper = styled.div`
   padding: 1rem;
 
   @media (max-width: 600px) {
-    grid-template-columns: repeat(8, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(8, 1fr); */
     gap: 0.2rem;
     padding: 0.5rem;
   }
@@ -56,6 +60,7 @@ const LettersWrapper = styled.div`
 const Letter = styled.button<{ $inactive: boolean }>`
   outline: none;
   display: flex;
+  flex-grow: 1;
   background-color: #000000;
   justify-content: center;
   color: #29ff29;

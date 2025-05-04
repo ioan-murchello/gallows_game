@@ -10,8 +10,12 @@ const WordWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.2rem, 5vw, 3rem);
   gap: 0.5rem;
+
+  @media (max-width: 600px) {
+    gap: 0.2rem;
+  }
 `;
 
 const KeyWrapper = styled.div`
@@ -20,13 +24,18 @@ const KeyWrapper = styled.div`
   align-items: center;
   gap: 1.2rem;
   border-bottom: 3px solid black;
-  width: 2rem;
+  width: 3rem;
+  height: 3rem;
   text-transform: uppercase;
   font-size: 2rem;
+  color: #000;
+  background-color: yellow;
 
   @media (max-width: 600px) {
-    font-size: 1.5rem;
-    gap: 0.5rem;
+    font-size: 1.2rem;
+    gap: 0.2rem;
+    width: 2rem;
+    height: 2rem;
   }
 `;
 
@@ -51,7 +60,7 @@ const Word = () => {
 
   return (
     <Wrapper>
-      <Description className="font">{wordToGuess.description}</Description>
+      <Description className="font">{wordToGuess.description}:</Description>
       <WordWrapper>
         {wordToGuess.answer.split("").map((el, idx) => (
           <KeyWrapper key={idx}>
