@@ -10,15 +10,6 @@ body {
   width: 100%;  
 }
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-} */
-
 .font{
   font-family: 'Kalam', cursive;
 }

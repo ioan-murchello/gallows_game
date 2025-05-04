@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { useGameContext } from "./ctx";
 import "animate.css";
-import { useEffect, useState } from "react";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
