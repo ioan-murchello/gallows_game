@@ -6,7 +6,7 @@ import Word from "./Word.js";
 import Keyboard from "./Keyboard.js";
 import ManBody from "./ManBody.js";
 import { useGameContext } from "./ctx.js";
-import Info from "./Info.js"; 
+import Info from "./Info.js";
 
 const Main = styled.main`
   display: grid;
@@ -14,6 +14,10 @@ const Main = styled.main`
   width: 100%;
   margin: 0 auto;
   gap: 2rem;
+
+  @media (max-width: 600px) {
+    gap: 0.7rem;
+  }
 `;
 
 function App() {

@@ -25,8 +25,8 @@ const InfoWrapper = styled.div`
   min-height: 100%;
 
   @media (max-width: 600px) {
-    font-size: 1.5rem;
-    gap: 0.5rem;
+    font-size: 1.1rem;
+    gap: 0.3rem;
   }
 `;
 

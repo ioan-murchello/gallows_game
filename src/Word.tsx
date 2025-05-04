@@ -35,7 +35,7 @@ const Description = styled.div`
   font-size: 1.4rem;
   font-weight: 600;
   @media (max-width: 600px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     text-align: center;
   }

@@ -33,14 +33,14 @@ const letters = [
 
 const LettersWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(38px, 1fr));
   gap: 0.5rem;
   max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
 
   @media (max-width: 600px) {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 0.2rem;
     padding: 0.5rem;
   }
